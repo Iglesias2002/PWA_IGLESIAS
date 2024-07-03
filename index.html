@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola Mundo PWA</title>
-    <!-- Agregar el icono de la PWA -->
     <link rel="icon" href="icon.png">
-    <!-- Agregar el archivo del manifiesto de la PWA -->
     <link rel="manifest" href="manifest.json">
-    <!-- Agregar el archivo del service worker -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -25,10 +22,9 @@
 </head>
 <body>
     <div id="mensaje">
-        <h1>Iglesias PWA</h1>
-        <h2>HOLA</h2>
-        <button onclick="location.href='pagina1.html'">Ir a Página 1</button>
-        <button onclick="location.href='pagina2.html'">Ir a Página 2</button>
+        <h1>Hola Mundo PWA</h1>
+        <button onclick="window.location.href='pagina1.html'">Página 1</button>
+        <button onclick="window.location.href='pagina2.html'">Página 2</button>
     </div>
 </body>
 </html>
