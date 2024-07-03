@@ -1,5 +1,5 @@
 {
-    "name": "Mi Progressive Web App",
+    "name": "Mi Progressive Web App IGLESIAS",
     "short_name": "MiPWA",
     "start_url": "/",
     "display": "standalone",
@@ -12,7 +12,7 @@
         "type": "image/png"
       },
       {
-        "src": "icon1.png",
+        "src": "icon.png",
         "sizes": "512x512",
         "type": "image/png"
       }
