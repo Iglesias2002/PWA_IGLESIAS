@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo PWA</title>
+    <!-- Agregar el icono de la PWA -->
+    <link rel="icon" href="icon.png">
+    <!-- Agregar el archivo del manifiesto de la PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Agregar el archivo del service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado con éxito:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Registro de Service Worker fallido:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="mensaje">
+        <h1>Iglesias PWA</h1>
+        <button onclick="location.href='pagina1.html'">Ir a Página 1</button>
+        <button onclick="location.href='pagina2.html'">Ir a Página 2</button>
+    </div>
+</body>
+</html>

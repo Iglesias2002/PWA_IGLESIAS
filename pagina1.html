@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Iglesias PWA</title>
+    <!-- Agregar el icono de la PWA -->
+    <link rel="icon" href="icon.png">
+    <!-- Agregar el archivo del manifiesto de la PWA -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Agregar el archivo del service worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado con éxito:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Registro de Service Worker fallido:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Página 1</h1>
+    <p>Bienvenido a la página 1 de Iglesias PWA.</p>
+    <p><a href="index.html">Volver a la página principal</a></p>
+</body>
+</html>
