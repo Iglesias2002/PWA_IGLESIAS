@@ -26,7 +26,7 @@ self.addEventListener('fetch', event => {
     console.log('Service Worker interceptando fetch event para:', event.request.url);
     event.respondWith(
         fetch(event.request).catch(() => {
-            return caches.match('/PWA_IGLESIAS/icon1.png'); // Devuelve la imagen de respaldo en caso de fallo
+            return caches.match('/PWA_IGLESIAS/oflline.html'); // Devuelve la imagen de respaldo en caso de fallo
         })
     );
 });
