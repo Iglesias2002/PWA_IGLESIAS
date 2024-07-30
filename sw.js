@@ -5,7 +5,7 @@ const URLS_TO_CACHE = [
     '/PWA_IGLESIAS/icon.png',
     '/PWA_IGLESIAS/icon1.png', 
     '/PWA_IGLESIAS/oflline.html', 
-    '/PWA_IGLESIAS//icon1.png, 
+    '/PWA_IGLESIAS/icon1.png, 
     // La imagen de respaldo
     // Agrega aquí cualquier otra URL que desees precachear
 ];
